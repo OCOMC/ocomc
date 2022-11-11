@@ -1,0 +1,179 @@
+Config {
+	FIELD_DELIMITER  ",";
+}
+
+InputRec {
+
+	String record_type;
+	String record_number;
+	String record_status;
+	String check_sum;
+	String call_reference;
+	String exchange_id;
+	String called_imsi;
+	String called_imei;
+	String called_number;
+	String called_category;
+	String called_ms_classmark;
+	String served_subs_lac;
+	String served_subs_ci;
+        String sms_centre;
+	String incoming_time;
+	String cause_for_termination;
+	String msc_type;
+	String calling_number;
+        String called_vmsc_number;
+	String calling_number_ton;
+	String called_number_ton;
+	String sms_type;
+	String call_reference_time;
+        String served_subs_mcc;
+        String served_subs_mnc;
+        String radio_network_type;
+        String hot_billing_record_number;
+        String called_imeisv;
+	String routing_category;
+        String add_routing_category;
+        String calling_vmsc_number;
+        String tariff_class;
+        String sms_length;
+        String number_of_in_records;
+        String ue_time_zone;
+        String num_of_concatenated_sms;
+        String concatenated_record_number;
+	String concatenated_sms_reference;
+	String application_info;	
+
+} in;
+
+OutputRec {
+	
+	String record_type;
+	String record_number;
+	String record_status;
+	String check_sum;
+	String call_reference;
+	String exchange_id;
+	String called_imsi;
+	String called_imei;
+	String called_number;
+	String called_category;
+	String called_ms_classmark;
+	String served_subs_lac;
+	String served_subs_ci;
+        String sms_centre;
+	String incoming_time;
+	String cause_for_termination;
+	String msc_type;
+	String calling_number;
+        String called_vmsc_number;
+	String calling_number_ton;
+	String called_number_ton;
+	String sms_type;
+	String call_reference_time;
+        String served_subs_mcc;
+        String served_subs_mnc;
+        String radio_network_type;
+        String hot_billing_record_number;
+        String called_imeisv;
+	String routing_category;
+        String add_routing_category;
+        String calling_vmsc_number;
+        String tariff_class;
+        String sms_length;
+        String number_of_in_records;
+        String ue_time_zone;
+        String num_of_concatenated_sms;
+        String concatenated_record_number;
+	String concatenated_sms_reference;
+	String application_info;	
+
+} out;
+
+ 
+
+//Assign the input record attribute to output record attribute here...
+
+out.record_type	= in.record_type;
+out.record_number = in.record_number;
+out.record_status = in.record_status;
+out.check_sum = in.check_sum;
+out.call_reference = in.call_reference;
+out.exchange_id	= in.exchange_id;
+out.called_imsi	= in.called_imsi;
+out.called_imei = in.called_imei;
+out.called_number = in.called_number;
+out.called_category = in.called_category;
+out.called_ms_classmark = in.called_ms_classmark;
+out.served_subs_lac = in.served_subs_lac;
+out.served_subs_ci = in.served_subs_ci;
+out.sms_centre = in.sms_centre;
+out.incoming_time = in.incoming_time;
+out.cause_for_termination = in.cause_for_termination;
+out.msc_type = in.msc_type;
+out.calling_number = in.calling_number;
+out.called_vmsc_number = in.called_vmsc_number;
+out.calling_number_ton	= in.calling_number_ton;
+out.called_number_ton = in.called_number_ton;
+out.sms_type = in.sms_type;
+out.call_reference_time = in.call_reference_time;
+out.served_subs_mcc = in.served_subs_mcc;
+out.served_subs_mnc = in.served_subs_mnc;
+out.radio_network_type = in.radio_network_type;
+out.hot_billing_record_number = in.hot_billing_record_number;
+out.called_imeisv = in.called_imeisv;
+out.routing_category = in.routing_category;
+out.add_routing_category = in.add_routing_category;
+out.calling_vmsc_number = in.calling_vmsc_number;
+out.tariff_class = in.tariff_class;
+out.sms_length = in.sms_length;
+out.number_of_in_records = in.number_of_in_records;
+out.ue_time_zone = in.ue_time_zone;
+out.num_of_concatenated_sms = in.num_of_concatenated_sms;
+out.concatenated_record_number	= in.concatenated_record_number;
+out.concatenated_sms_reference = in.concatenated_sms_reference;
+out.application_info = in.application_info;
+
+
+
+logInfo( "record_type	-->"+out.record_type );
+logInfo( "record_number	 -->"+out.record_number );
+logInfo( "record_status	 -->"+out.record_status );
+logInfo( "check_sum  -->"+out.check_sum );
+logInfo( "call_reference -->"+out.call_reference );
+logInfo( "exchange_id -->"+out.exchange_id );
+logInfo( "called_imsi -->"+out.called_imsi );
+logInfo( "called_imei -->"+out.called_imei );
+logInfo( "called_number -->"+out.called_number );
+logInfo( "called_category -->"+out.called_category );
+logInfo( "called_ms_classmark -->"+out.called_ms_classmark );
+logInfo( "served_subs_lac -->"+out.served_subs_lac );
+logInfo( "served_subs_ci -->"+out.served_subs_ci );
+logInfo( "sms_centre -->"+out.sms_centre );
+logInfo( "incoming_time -->"+out.incoming_time );
+logInfo( "cause_for_termination -->"+out.cause_for_termination );
+logInfo( "msc_type -->"+out.msc_type );
+logInfo( "calling_number -->"+out.calling_number );
+logInfo( "called_vmsc_number -->"+out.called_vmsc_number );
+logInfo( "calling_number_ton -->"+out.calling_number_ton );
+logInfo( "called_number_ton -->"+out.called_number_ton );
+logInfo( "sms_type -->"+out.sms_type );
+logInfo( "call_reference_time -->"+out.call_reference_time );
+logInfo( "served_subs_mcc -->"+out.served_subs_mcc );
+logInfo( "served_subs_mnc -->"+out.served_subs_mnc );
+logInfo( "radio_network_type -->"+out.radio_network_type );
+logInfo( "hot_billing_record_number -->"+out.hot_billing_record_number );
+logInfo( "called_imeisv -->"+out.called_imeisv );
+logInfo( "routing_category -->"+out.routing_category );
+logInfo( "add_routing_category -->"+out.add_routing_category );
+logInfo("calling_vmsc_number -->"+out.calling_vmsc_number );
+logInfo("tariff_class -->"+out.tariff_class );
+logInfo("sms_length -->"+out.sms_length );
+logInfo("number_of_in_records -->"+out.number_of_in_records );
+logInfo( "ue_time_zone -->"+out.ue_time_zone );
+logInfo( "num_of_concatenated_sms -->"+out.num_of_concatenated_sms );
+logInfo( "concatenated_record_number -->"+out.concatenated_record_number );
+logInfo( "concatenated_sms_reference -->"+out.concatenated_sms_reference );
+logInfo( "application_info -->"+out.application_info );
+
+write(out);
