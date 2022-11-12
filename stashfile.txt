@@ -1,0 +1,2 @@
+this file for stash purpose 
+stash menas taing backup of you r code with out comiit ing to loca repo from woring area reason if we wnat switch the breanch
